@@ -46,12 +46,24 @@ body{
     position: absolute;
     bottom: 0px;
     text-align: right;
-    padding:-50px;
+    padding-top:-50px;
+    padding-left: 20px;
     font-weight: 900;
     font-size: 350%;
     overflow-x:scroll;
     overflow-y: hidden;
 }
+
+#result::-webkit-scrollbar {
+    background: #0000002c;
+    height: 10px;
+    border-radius: 8px;
+  }
+#result::-webkit-scrollbar-thumb{
+    background: rgb(170, 170, 170);
+    border-radius: 5px;
+  }
+
 #keypad{
 display:grid;
 gap:7px;
