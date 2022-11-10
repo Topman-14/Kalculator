@@ -1,5 +1,5 @@
 body{
-    height:100%;
+    height:100vh;
     background: linear-gradient(120deg, rgb(201, 129, 243), rgb(136, 240, 240));
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -38,12 +38,19 @@ body{
     color: rgb(77, 77, 77);
     font-weight: 600;
     font-size: larger;
+    
 }
 #result{
-    width: 100%;
+    width: 95%;
     height:75px;
     position: absolute;
     bottom: 0px;
+    text-align: right;
+    padding:-50px;
+    font-weight: 900;
+    font-size: 350%;
+    overflow-x:scroll;
+    overflow-y: hidden;
 }
 #keypad{
 display:grid;
