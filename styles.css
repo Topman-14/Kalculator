@@ -1,11 +1,11 @@
 body{
     height:100%;
-    background: rgb(1, 1, 29);
+    background: linear-gradient(120deg, rgb(201, 129, 243), rgb(136, 240, 240));
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #heading{
     padding-top:20px;
-    color:wheat;
+    color:rgb(24, 5, 107);
     text-align: center;
 }
 
@@ -21,7 +21,7 @@ body{
     background: white;
 }
 #screen{
-    border: 3px solid grey;
+    border: 3px solid rgba(112, 112, 112, 0.719);
     height:120px;
     margin:10px;
     border-radius: 30px 30px 10px 10px;
@@ -30,34 +30,49 @@ body{
 }
 #operation{
     width: inherit;
-    height: 40px;
-    border-bottom:1px solid grey;
+    text-align: right;
+    padding-right: 20px;
+    height: 25px;
+    border-bottom:1px solid rgba(112, 112, 112, 0.616);
+    padding-top: 10px;
+    color: rgb(77, 77, 77);
+    font-weight: 600;
+    font-size: larger;
 }
 #result{
     width: 100%;
-    height:80px;
+    height:75px;
     position: absolute;
     bottom: 0px;
 }
 #keypad{
 display:grid;
-gap:5px;
+gap:7px;
 padding: 25px;
 min-height:300px;
-
+grid-template-columns: auto;
 }
 .keys{
     border-radius: 10px;
     text-align: center;
-    width:auto;
     padding:20px;
-    border: 2px solid white;
+    border: none;
     background-color: aquamarine;
     font-weight: 900;
 }
 .red-bg{
-    background: rgb(196, 2, 2);
+    background: rgb(235, 5, 5);
     color: wheat;
+}
+.blu-bg{
+    background: rgb(48, 170, 240);
+}
+.grn-bg{
+    background: rgb(2, 121, 2);
+    font-weight:900;
+    font-size: larger;
+    padding: 15px;
+    color:antiquewhite;
 }
 .snd{
     grid-column-start: 2;
@@ -67,4 +82,8 @@ min-height:300px;
 }
 .frth{
     grid-column-start: 4;
+}
+#del{
+    grid-row-start: 4;
+    grid-row-end:6;
 }
