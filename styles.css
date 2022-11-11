@@ -47,7 +47,7 @@ body{
     bottom: 0px;
     text-align: right;
     padding-top:-50px;
-    padding-left: 20px;
+    padding-left: 10px;
     font-weight: 900;
     font-size: 350%;
     overflow-x:scroll;
@@ -57,7 +57,6 @@ body{
 #result::-webkit-scrollbar {
     background: #0000002c;
     height: 10px;
-    border-radius: 8px;
   }
 #result::-webkit-scrollbar-thumb{
     background: rgb(170, 170, 170);
