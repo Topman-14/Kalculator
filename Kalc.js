@@ -1,7 +1,7 @@
 const keys = document.querySelectorAll("button");
 const ac = document.querySelector("#ac");
 const del = document.querySelector("#del");
-const theme = document.querySelector("#darkmode");
+const theme = document.querySelector(".darkmode");
 
 var toggle = false;
 theme.addEventListener("click", ()=>{
@@ -45,4 +45,8 @@ del.addEventListener("click", ()=>{
 ac.addEventListener('click', ()=>{
    document.querySelector('#operation').textContent = ""
    document.querySelector("#result").textContent = ""
-})
+});
+
+document.querySelector(".push").addEventListener('click', ()=>{
+   document.querySelector('#operation').textContent = document.querySelector("#result").textContent;
+});

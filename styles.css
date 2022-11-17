@@ -19,15 +19,18 @@ body{
     text-align: center;
     font-weight: 700;
 }
-#darkmode{
+.darkmode{
     position:absolute;
     height: 50px;
     right:20px;
     top:0px;
-    transition: 0.2s;
+    transition: 0.3s;
 }
-#darkmode:hover{
+.darkmode:hover{
     scale:1.1;
+}
+.fade{
+    opacity:0;
 }
 .calculator{
     border-radius:40px;
@@ -65,6 +68,27 @@ body{
     color: rgb(77, 77, 77);
     font-weight: 600;
     font-size: larger;
+    overflow: hidden;
+}
+.push{
+    position: absolute;
+    bottom:10px;
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    background-color: #000000;
+    left:4px;
+    bottom:10px;
+    opacity: 0.3;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.45rem;
+    color:#ffffff;
+    transition: 0.3s;
+}
+.push:hover{
+    opacity: 0.9;
+    scale:1.1;
 }
 #result{
     width: 95%;
@@ -92,7 +116,6 @@ display:grid;
 gap:7px;
 padding: 25px;
 min-height:300px;
-grid-template-columns: auto;
 }
 .keys{
     border-radius: 10px;
@@ -102,6 +125,7 @@ grid-template-columns: auto;
     background-color: aquamarine;
     font-weight: 900;
     transition: 0.2s;
+    min-width: 60px;
 }
 
 .keys:hover{
@@ -123,6 +147,7 @@ grid-template-columns: auto;
 }
 .snd{
     grid-column-start: 2;
+    
 }
 .thrd{
     grid-column-start: 3;
