@@ -2,32 +2,59 @@ body{
     height:100vh;
     background: linear-gradient(120deg, rgb(201, 129, 243), rgb(136, 240, 240));
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
 }
-#heading{
-    padding-top:20px;
+.bodydark{
+    background: linear-gradient(0deg, rgb(0, 3, 44), black);
+}
+.heading{
+    padding-top:5px;
     color:rgb(24, 5, 107);
     text-align: center;
+    transition: 0.5s;
 }
-
-#calculator{
+.headdark{
+    padding-top:5px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 700;
+}
+#darkmode{
+    position:absolute;
+    height: 50px;
+    right:20px;
+    top:0px;
+    transition: 0.2s;
+}
+#darkmode:hover{
+    scale:1.1;
+}
+.calculator{
     border-radius:40px;
     box-shadow: 0px 1px 10px #000000;
-    min-height: 450px;
+    min-height: 500px;
+    max-height: 800px;
     width:80%;
     min-width:250px;
-    margin:40px auto;
+    margin:30px auto;
     max-width:500px;
     padding-top:1px;
     background: white;
+    transition: 0.5s;
 }
-#screen{
+.calcdark{
+    background-color: #00000000;
+    border: 3px solid white;
+    color:whitesmoke;
+}
+.screen{
     border: 3px solid rgba(112, 112, 112, 0.719);
     height:120px;
     margin:10px;
     border-radius: 30px 30px 10px 10px;
     position: relative;
-
 }
+
 #operation{
     width: inherit;
     text-align: right;
@@ -38,7 +65,6 @@ body{
     color: rgb(77, 77, 77);
     font-weight: 600;
     font-size: larger;
-    
 }
 #result{
     width: 95%;
@@ -53,16 +79,14 @@ body{
     overflow-x:scroll;
     overflow-y: hidden;
 }
-
 #result::-webkit-scrollbar {
-    background: #0000002c;
-    height: 10px;
+    background: #00000000;
+    height: 7px;
   }
 #result::-webkit-scrollbar-thumb{
     background: rgb(170, 170, 170);
-    border-radius: 5px;
+    border-radius: 9px;
   }
-
 #keypad{
 display:grid;
 gap:7px;
@@ -77,6 +101,11 @@ grid-template-columns: auto;
     border: none;
     background-color: aquamarine;
     font-weight: 900;
+    transition: 0.2s;
+}
+
+.keys:hover{
+    filter: brightness(60%);
 }
 .red-bg{
     background: rgb(235, 5, 5);
@@ -86,7 +115,7 @@ grid-template-columns: auto;
     background: rgb(48, 170, 240);
 }
 .grn-bg{
-    background: rgb(2, 121, 2);
+    background: rgb(11, 150, 11);
     font-weight:900;
     font-size: larger;
     padding: 15px;
