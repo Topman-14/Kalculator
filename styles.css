@@ -21,9 +21,9 @@ body{
 }
 .darkmode{
     position:absolute;
-    height: 50px;
-    right:20px;
-    top:0px;
+    height: 40px;
+    right:16px;
+    top:3px;
     transition: 0.3s;
 }
 .darkmode:hover{
@@ -61,7 +61,7 @@ body{
 #operation{
     width: inherit;
     text-align: right;
-    padding-right: 20px;
+    padding: 10px 20px 0 0;
     height: 25px;
     border-bottom:1px solid rgba(112, 112, 112, 0.616);
     padding-top: 10px;
@@ -96,8 +96,7 @@ body{
     position: absolute;
     bottom: 0px;
     text-align: right;
-    padding-top:-50px;
-    padding-left: 10px;
+    padding-top:-50px 0 0 0px;
     font-weight: 900;
     font-size: 350%;
     overflow-x:scroll;
@@ -114,18 +113,18 @@ body{
 #keypad{
 display:grid;
 gap:7px;
-padding: 25px;
+padding: 20px;
 min-height:300px;
 }
 .keys{
     border-radius: 10px;
     text-align: center;
-    padding:20px;
+    padding:15px;
     border: none;
     background-color: aquamarine;
     font-weight: 900;
     transition: 0.2s;
-    min-width: 60px;
+    min-width: 55px;
 }
 
 .keys:hover{
@@ -134,6 +133,7 @@ min-height:300px;
 .red-bg{
     background: rgb(235, 5, 5);
     color: wheat;
+    text-align: left;
 }
 .blu-bg{
     background: rgb(48, 170, 240);
@@ -158,4 +158,26 @@ min-height:300px;
 #del{
     grid-row-start: 4;
     grid-row-end:6;
+}
+@media (max-width: 280px) {
+    .darkmode{
+        height:25px;
+        top: 6px;
+    }
+    .headdark, .heading{
+        font-size: 1.5rem;
+    }
+    .keys{
+        min-width: 50px;
+        padding:0px 10px 0px 10px;
+    }
+    #keypad{
+        padding:10px;
+    }
+    #operation{
+        padding:10px 10px 0 0;
+    }
+    #result{
+
+    }
 }
